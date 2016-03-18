@@ -1,0 +1,7 @@
+id,source,target,type
+1,ObjectA,ObjectC,ID1
+2,ObjectA,ObjectB,ID1
+4,ObjectB,ObjectC,ID1
+7,ObjectC,ObjectA,ID2
+8,ObjectB,ObjectA,ID2
+10,ObjectC,ObjectB,ID2
