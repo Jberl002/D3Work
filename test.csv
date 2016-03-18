@@ -5,3 +5,6 @@ id,source,target,type
 7,ObjectC,ObjectA,ID2
 8,ObjectB,ObjectA,ID2
 10,ObjectC,ObjectB,ID2
+11,Nick,Jake,ID2
+12,Amanda,Jake,ID2
+13,Jake,Taylor,ID1
