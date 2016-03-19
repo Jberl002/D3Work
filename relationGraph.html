@@ -74,7 +74,7 @@ text.shadow {
           .attr("width", w)
           .attr("height", h);
 		  
-		  svg.append("svg:defs").selectAll("marker")
+	  svg.append("svg:defs").selectAll("marker")
 			.data(["end"])      // Different link/path types can be defined here
 		  .enter().append("svg:marker")    // This section adds in the arrows
 			.attr("id", String)
@@ -86,10 +86,11 @@ text.shadow {
 			.attr("orient", "auto")
 		  .append("svg:path")
 			.attr("d", "M0,-5L10,0L0,5");
+	  
 
-      var path = svg.append("g").selectAll("path")
+      var path = svg.append("svg:g").selectAll("path")
           .data(force.links())
-        .enter().append("path")
+        .enter().append("svg:path")
           .attr("class", function (d,i) { return "link " + d.type; })
           .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
 		  
