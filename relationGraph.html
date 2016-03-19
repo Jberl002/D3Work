@@ -94,15 +94,7 @@ text.shadow {
           .attr("class", function (d,i) { return "link " + d.type; })
           .attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
 	  
-	  var tip = d3.tip()
-                .attr('class', 'd3-tip')
-                .offset([-10, 0])
-                .html(function(d) {
-                    var index = vertices.findIndex(x => x.id==d.id);
-                    return "<strong>Name:</strong> <span style='color:yellow'>";
-                    });
-      svg.call(tip);	  
-      
+	  
       var circle = svg.append("g").selectAll("circle")
           .data(force.nodes())
         .enter().append("circle")
